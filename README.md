@@ -4,9 +4,8 @@
   Last updated: October 2026
 
   Accuracy policy:
-  - Projects with live source code are linked to their repository.
-  - Projects without pushed code use [ADD LINK] / [NEEDS VERIFICATION].
-  - Source code inspected locally for accurate descriptions.
+  - Every featured project links to its public repository and includes screenshots.
+  - Descriptions are based on the actual source code.
 -->
 
 <div align="center">
@@ -79,8 +78,9 @@ A web-based calculator for basic arithmetic operations with backspace, clear, an
 **Category:** Web Application
 **Skills demonstrated:** DOM manipulation, JavaScript logic, `eval()` expression evaluation, event handling
 
-<a href="[ADD LINK]"><img src="https://img.shields.io/badge/View_Repository-181717?style=for-the-badge&logo=github&logoColor=white" alt="View Repo"></a>
-<a href="[ADD LINK]"><img src="https://img.shields.io/badge/Live_Demo-28a745?style=for-the-badge&logoColor=white" alt="View Demo"></a>
+![Calculator Screenshot](Calculator/Screenshot%20(446).png)
+
+<a href="https://github.com/lyn514/Calculator"><img src="https://img.shields.io/badge/View_Repository-181717?style=for-the-badge&logo=github&logoColor=white" alt="View Repo"></a>
 
 ---
 
@@ -95,8 +95,14 @@ A multi-page coffee shop website with menu display, login page, registration, an
 **Category:** Web Design
 **Skills demonstrated:** Multi-page HTML structure, CSS styling, JavaScript interactivity, form handling
 
-<a href="https://github.com/lyn514/mona"><img src="https://img.shields.io/badge/View_Repository-181717?style=for-the-badge&logo=github&logoColor=white" alt="View Repo"></a>
-<a href="[ADD LINK]"><img src="https://img.shields.io/badge/Live_Demo-28a745?style=for-the-badge&logoColor=white" alt="View Demo"></a>
+| Preview | | Preview | |
+|---|---|---|---|
+| ![Menu Page](Christmes%20Coffee%20&%20Dessert/Screenshot%20(453).png) | ![](Christmes%20Coffee%20&%20Dessert/Screenshot%20(454).png) | ![](Christmes%20Coffee%20&%20Dessert/Screenshot%20(455).png) | ![](Christmes%20Coffee%20&%20Dessert/Screenshot%20(456).png) |
+| ![](Christmes%20Coffee%20&%20Dessert/Screenshot%20(457).png) | ![](Christmes%20Coffee%20&%20Dessert/Screenshot%20(458).png) | ![](Christmes%20Coffee%20&%20Dessert/Screenshot%20(460).png) | ![](Christmes%20Coffee%20&%20Dessert/Screenshot%20(461).png) |
+| ![](Christmes%20Coffee%20&%20Dessert/Screenshot%20(462).png) | ![](Christmes%20Coffee%20&%20Dessert/Screenshot%20(463).png) | | |
+
+<a href="https://github.com/lyn514/Coffee-Shop-Website"><img src="https://img.shields.io/badge/View_Repository-181717?style=for-the-badge&logo=github&logoColor=white" alt="View Repo"></a>
+<a href="https://lyn514.github.io/Coffee-Shop-Website/"><img src="https://img.shields.io/badge/Live_Site-28a745?style=for-the-badge&logoColor=white" alt="Live Site"></a>
 
 ---
 
@@ -110,8 +116,7 @@ A Flappy Bird-style arcade game built with C++ and the SFML graphics library. Pl
 **Category:** Game Development
 **Skills demonstrated:** SFML graphics rendering, game physics (gravity/jump), collision detection, event handling, game loop architecture
 
-<a href="https://github.com/lyn514/Angry_Pig"><img src="https://img.shields.io/badge/View_Repository-181717?style=for-the-badge&logo=github&logoColor=white" alt="View Repo"></a>
-<a href="[ADD LINK]"><img src="https://img.shields.io/badge/Live_Demo-28a745?style=for-the-badge&logoColor=white" alt="View Demo"></a>
+<a href="https://github.com/lyn514/Angry-Pig"><img src="https://img.shields.io/badge/View_Repository-181717?style=for-the-badge&logo=github&logoColor=white" alt="View Repo"></a>
 
 ---
 
@@ -125,8 +130,7 @@ A C++ arcade-style space shooter game using SFML. Source code available in proje
 **Category:** Game Development
 **Skills demonstrated:** C++ game loops, graphics rendering, input handling
 
-<a href="[ADD LINK]"><img src="https://img.shields.io/badge/View_Repository-181717?style=for-the-badge&logo=github&logoColor=white" alt="View Repo"></a>
-<a href="[ADD LINK]"><img src="https://img.shields.io/badge/Live_Demo-28a745?style=for-the-badge&logoColor=white" alt="View Demo"></a>
+<a href="https://github.com/lyn514/SpaceWar"><img src="https://img.shields.io/badge/View_Repository-181717?style=for-the-badge&logo=github&logoColor=white" alt="View Repo"></a>
 
 ---
 
@@ -140,8 +144,13 @@ A Java Swing desktop application for St. John Paul II College of Davao's enrollm
 **Category:** Desktop Application
 **Skills demonstrated:** Java OOP, Swing GUI, role-based authentication, class design, data encapsulation, event-driven programming
 
-<a href="[ADD LINK]"><img src="https://img.shields.io/badge/View_Repository-181717?style=for-the-badge&logo=github&logoColor=white" alt="View Repo"></a>
-<a href="[ADD LINK]"><img src="https://img.shields.io/badge/Live_Demo-28a745?style=for-the-badge&logoColor=white" alt="View Demo"></a>
+| Login | Dashboard |
+|---|---|
+| ![Login Screen](Enrollment%20System/Screenshot%20(448).png) | ![Admin Dashboard](Enrollment%20System/Screenshot%20(449).png) |
+| ![Faculty Module](Enrollment%20System/Screenshot%20(450).png) | ![Student Module](Enrollment%20System/Screenshot%20(451).png) |
+| ![Student Records](Enrollment%20System/Screenshot%20(452).png) | |
+
+<a href="https://github.com/lyn514/Enrollment-System"><img src="https://img.shields.io/badge/View_Repository-181717?style=for-the-badge&logo=github&logoColor=white" alt="View Repo"></a>
 
 ---
 
@@ -154,6 +163,10 @@ A Java Swing scientific calculator with a custom expression parser. Features inc
 
 **Category:** Desktop Application
 **Skills demonstrated:** Custom expression parser, Java Swing, event handling, data structures (LinkedHashMap for variables), mathematical operations
+
+![Scientific Calculator Screenshot](Scientific%20Calculator/Screenshot%20(447).png)
+
+<a href="https://github.com/lyn514/Scientific-Calculator"><img src="https://img.shields.io/badge/View_Repository-181717?style=for-the-badge&logo=github&logoColor=white" alt="View Repo"></a>
 
 ---
 

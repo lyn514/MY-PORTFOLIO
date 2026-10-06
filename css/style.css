@@ -341,6 +341,35 @@ ul {
     color: var(--color-text-muted);
 }
 
+.avatar-frame {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid var(--color-accent);
+    box-shadow: var(--shadow-hover);
+    background: var(--color-bg-secondary);
+}
+
+.avatar-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 25%;
+    transition: var(--transition);
+}
+
+.avatar-frame:hover .avatar-photo {
+    transform: scale(1.06);
+}
+
+.avatar-caption {
+    margin-top: 0.85rem;
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+    text-align: center;
+}
+
 .quick-answers {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -541,6 +570,328 @@ ul {
     transform: translateY(-2px);
 }
 
+/* Clickable screenshot thumbnail */
+.project-card__img--button {
+    position: relative;
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 0;
+    cursor: zoom-in;
+    background: var(--color-bg-secondary);
+    font: inherit;
+    color: inherit;
+}
+
+.project-card__img--button:focus-visible {
+    outline: 2px solid var(--color-accent-hover);
+    outline-offset: -2px;
+}
+
+.project-card__zoom {
+    position: absolute;
+    inset: auto 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    padding: 0.5rem;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    color: #fff;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0));
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.project-card__img--button:hover .project-card__zoom,
+.project-card__img--button:focus-visible .project-card__zoom {
+    opacity: 1;
+}
+
+/* ==================================================
+   IT Memories Museum
+================================================== */
+
+.memories__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1.75rem;
+}
+
+.memories__count {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+}
+
+.memories__count i {
+    color: var(--color-accent);
+}
+
+.memories__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.memory-item {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    background: var(--color-bg-secondary);
+    cursor: zoom-in;
+    aspect-ratio: 4 / 3;
+    transition: var(--transition);
+}
+
+.memory-item:hover,
+.memory-item:focus-visible {
+    border-color: var(--color-accent);
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-4px);
+}
+
+.memory-item:focus-visible {
+    outline: 2px solid var(--color-accent-hover);
+    outline-offset: 2px;
+}
+
+.memory-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.memory-item:hover img {
+    transform: scale(1.07);
+}
+
+.memory-item__label {
+    position: absolute;
+    inset: auto 0 0 0;
+    padding: 0.45rem 0.6rem;
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: #fff;
+    text-align: left;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.memory-item:hover .memory-item__label,
+.memory-item:focus-visible .memory-item__label {
+    opacity: 1;
+}
+
+.memory-item--broken {
+    display: none;
+}
+
+/* ==================================================
+   Lightbox Screenshot Viewer
+================================================== */
+
+.lightbox[hidden] {
+    display: none;
+}
+
+.lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+.lightbox__backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(28, 24, 20, 0.88);
+    backdrop-filter: blur(3px);
+}
+
+.lightbox__dialog {
+    position: relative;
+    width: min(1000px, 100%);
+    max-height: 92vh;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    background: var(--color-bg-card);
+    border-radius: var(--radius);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+    overflow: hidden;
+}
+
+.lightbox__bar {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.85rem 1rem;
+    border-bottom: 1px solid var(--color-border-light);
+}
+
+.lightbox__title {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--color-text);
+    margin-right: auto;
+}
+
+.lightbox__counter {
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+    font-variant-numeric: tabular-nums;
+}
+
+.lightbox__stage {
+    position: relative;
+    flex: 1;
+    min-height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-bg-secondary);
+}
+
+.lightbox__figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+    min-width: 0;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 1rem 0;
+}
+
+.lightbox__img {
+    max-width: 100%;
+    max-height: 68vh;
+    object-fit: contain;
+}
+
+.lightbox__caption {
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    text-align: center;
+}
+
+.lightbox__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.25rem;
+    height: 2.25rem;
+    border: 1px solid var(--color-border);
+    border-radius: 50%;
+    background: var(--color-bg-card);
+    color: var(--color-text);
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+.lightbox__btn[hidden] {
+    display: none;
+}
+
+.lightbox__btn:hover {
+    background: var(--color-accent);
+    border-color: var(--color-accent);
+    color: #fff;
+}
+
+.lightbox__btn--close {
+    border: none;
+}
+
+.lightbox__btn--prev,
+.lightbox__btn--next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    box-shadow: var(--shadow);
+}
+
+.lightbox__btn--prev {
+    left: 0.75rem;
+}
+
+.lightbox__btn--next {
+    right: 0.75rem;
+}
+
+.lightbox__thumbs {
+    display: flex;
+    gap: 0.5rem;
+    padding: 0 1rem 1rem;
+    overflow-x: auto;
+}
+
+.lightbox__thumbs:empty {
+    display: none;
+}
+
+.lightbox__thumb {
+    flex: 0 0 auto;
+    width: 64px;
+    height: 44px;
+    padding: 0;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    overflow: hidden;
+    background: var(--color-bg-secondary);
+    cursor: pointer;
+    opacity: 0.6;
+    transition: var(--transition);
+}
+
+.lightbox__thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.lightbox__thumb:hover {
+    opacity: 1;
+}
+
+.lightbox__thumb--active {
+    border-color: var(--color-accent);
+    opacity: 1;
+}
+
+body.lightbox-open {
+    overflow: hidden;
+}
+
+@media (max-width: 640px) {
+    .lightbox {
+        padding: 0.75rem;
+    }
+
+    .lightbox__img {
+        max-height: 60vh;
+    }
+}
+
 /* ==================================================
    Academic Timeline
 ================================================== */
@@ -649,6 +1000,13 @@ ul {
     align-items: center;
 }
 
+.webdev__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+
 .webdev__features {
     list-style: none;
     margin-top: 1rem;
@@ -687,6 +1045,20 @@ ul {
 
 .webdev__preview:hover img {
     transform: scale(1.03);
+}
+
+.webdev__preview--button {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: 1px solid var(--color-border);
+    cursor: zoom-in;
+}
+
+.webdev__preview--button:focus-visible {
+    outline: 2px solid var(--color-accent-hover);
+    outline-offset: 2px;
 }
 
 /* ==================================================

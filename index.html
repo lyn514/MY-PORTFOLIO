@@ -19,6 +19,7 @@
                 <li><a href="#about" class="nav__link">About</a></li>
                 <li><a href="#tech" class="nav__link">Tech Stack</a></li>
                 <li><a href="#projects" class="nav__link">Projects</a></li>
+                <li><a href="#memories" class="nav__link">Memories</a></li>
                 <li><a href="#learning" class="nav__link">Currently Learning</a></li>
                 <li><a href="#contact" class="nav__link">Contact</a></li>
             </ul>
@@ -86,9 +87,10 @@
                         </div>
                     </div>
                     <div class="about__avatar">
-                        <div class="avatar-placeholder">
-                            <i class="fas fa-user"></i>
+                        <div class="avatar-frame">
+                            <img src="pfp.jpg" alt="Portrait of Rovelyn C. Lani" class="avatar-photo">
                         </div>
+                        <p class="avatar-caption">BSIT &middot; St. John Paul II College of Davao</p>
                     </div>
                 </div>
             </div>
@@ -134,9 +136,12 @@
 
                 <div class="projects__grid">
                     <div class="project-card">
-                        <div class="project-card__img">
-                            <img src="https://placehold.co/400x250/d4c9b4/3a3530?text=Calculator" alt="Calculator Screenshot">
-                        </div>
+                        <button type="button" class="project-card__img project-card__img--button"
+                            data-gallery="calculator" data-gallery-index="0"
+                            aria-label="View Calculator screenshots">
+                            <img src="Calculator/Screenshot%20(446).png" alt="Calculator Screenshot">
+                            <span class="project-card__zoom"><i class="fas fa-search-plus"></i> View Screenshot</span>
+                        </button>
                         <div class="project-card__content">
                             <div class="project-card__badges">
                                 <span class="badge-sm">HTML</span>
@@ -150,16 +155,20 @@
                                 <span class="project-card__skills">DOM, JavaScript logic</span>
                             </div>
                             <div class="project-card__links">
-                                <a href="[ADD LINK]" class="project-link">View Repository</a>
-                                <a href="[ADD LINK]" class="project-link">View Demo</a>
+                                <a href="https://github.com/lyn514/Calculator" target="_blank" rel="noopener" class="project-link">
+                                    <i class="fab fa-github"></i> View Repository
+                                </a>
                             </div>
                         </div>
                     </div>
 
                     <div class="project-card">
-                        <div class="project-card__img">
-                            <img src="https://placehold.co/400x250/c1b296/3a3530?text=Coffee+Shop+Website" alt="Coffee Shop Website Screenshot">
-                        </div>
+                        <button type="button" class="project-card__img project-card__img--button"
+                            data-gallery="coffee" data-gallery-index="0"
+                            aria-label="View Christmas Coffee and Dessert screenshots">
+                            <img src="Christmes%20Coffee%20&amp;%20Dessert/Screenshot%20(453).png" alt="Christmas Coffee and Dessert Screenshot">
+                            <span class="project-card__zoom"><i class="fas fa-images"></i> View 10 Screenshots</span>
+                        </button>
                         <div class="project-card__content">
                             <div class="project-card__badges">
                                 <span class="badge-sm">HTML</span>
@@ -173,8 +182,12 @@
                                 <span class="project-card__skills">Multi-page layout, CSS styling, JS interactivity</span>
                             </div>
                             <div class="project-card__links">
-                                <a href="[ADD LINK]" class="project-link">View Repository</a>
-                                <a href="[ADD LINK]" class="project-link">View Demo</a>
+                                <a href="https://github.com/lyn514/Coffee-Shop-Website" target="_blank" rel="noopener" class="project-link">
+                                    <i class="fab fa-github"></i> View Repository
+                                </a>
+                                <a href="https://lyn514.github.io/Coffee-Shop-Website/" target="_blank" rel="noopener" class="project-link">
+                                    <i class="fas fa-arrow-up-right-from-square"></i> Live Site
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -195,8 +208,9 @@
                                 <span class="project-card__skills">SFML graphics, game physics, collision detection</span>
                             </div>
                             <div class="project-card__links">
-                                <a href="https://github.com/lyn514/Angry_Pig" class="project-link">View Repository</a>
-                                <a href="[ADD LINK]" class="project-link">View Demo</a>
+                                <a href="https://github.com/lyn514/Angry-Pig" target="_blank" rel="noopener" class="project-link">
+                                    <i class="fab fa-github"></i> View Repository
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -217,16 +231,20 @@
                                 <span class="project-card__skills">C++ game loops, graphics rendering</span>
                             </div>
                             <div class="project-card__links">
-                                <a href="[ADD LINK]" class="project-link">View Repository</a>
-                                <a href="[ADD LINK]" class="project-link">View Demo</a>
+                                <a href="https://github.com/lyn514/SpaceWar" target="_blank" rel="noopener" class="project-link">
+                                    <i class="fab fa-github"></i> View Repository
+                                </a>
                             </div>
                         </div>
                     </div>
 
                     <div class="project-card">
-                        <div class="project-card__img">
-                            <img src="https://placehold.co/400x250/d4c9b4/3a3530?text=Enrollment+System" alt="Enrollment System Screenshot">
-                        </div>
+                        <button type="button" class="project-card__img project-card__img--button"
+                            data-gallery="enrollment" data-gallery-index="0"
+                            aria-label="View Enrollment System screenshots">
+                            <img src="Enrollment%20System/Screenshot%20(448).png" alt="Enrollment System Screenshot">
+                            <span class="project-card__zoom"><i class="fas fa-images"></i> View 5 Screenshots</span>
+                        </button>
                         <div class="project-card__content">
                             <div class="project-card__badges">
                                 <span class="badge-sm">Java</span>
@@ -239,16 +257,20 @@
                                 <span class="project-card__skills">Java OOP, Swing GUI, role-based auth</span>
                             </div>
                             <div class="project-card__links">
-                                <a href="[ADD LINK]" class="project-link">View Repository</a>
-                                <a href="[ADD LINK]" class="project-link">View Demo</a>
+                                <a href="https://github.com/lyn514/Enrollment-System" target="_blank" rel="noopener" class="project-link">
+                                    <i class="fab fa-github"></i> View Repository
+                                </a>
                             </div>
                         </div>
                     </div>
 
                     <div class="project-card">
-                        <div class="project-card__img">
-                            <img src="https://placehold.co/400x250/c1b296/3a3530?text=Scientific+Calculator" alt="Scientific Calculator Screenshot">
-                        </div>
+                        <button type="button" class="project-card__img project-card__img--button"
+                            data-gallery="scientific" data-gallery-index="0"
+                            aria-label="View Scientific Calculator screenshot">
+                            <img src="Scientific%20Calculator/Screenshot%20(447).png" alt="Scientific Calculator Screenshot">
+                            <span class="project-card__zoom"><i class="fas fa-search-plus"></i> View Screenshot</span>
+                        </button>
                         <div class="project-card__content">
                             <div class="project-card__badges">
                                 <span class="badge-sm">Java</span>
@@ -261,8 +283,9 @@
                                 <span class="project-card__skills">Expression parsing, event handling, data structures</span>
                             </div>
                             <div class="project-card__links">
-                                <a href="[ADD LINK]" class="project-link">View Repository</a>
-                                <a href="[ADD LINK]" class="project-link">View Demo</a>
+                                <a href="https://github.com/lyn514/Scientific-Calculator" target="_blank" rel="noopener" class="project-link">
+                                    <i class="fab fa-github"></i> View Repository
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -313,6 +336,28 @@
             </div>
         </section>
 
+        <section id="memories" class="memories section">
+            <div class="container">
+                <h2 class="section__title">IT Memories Museum</h2>
+                <p class="section__subtitle">
+                    A gallery of moments captured during my IT journey &mdash; labs, presentations,
+                    and everyday campus life.
+                </p>
+
+                <div class="memories__head">
+                    <p class="memories__count">
+                        <i class="fas fa-camera-retro"></i>
+                        <span id="memories-total">0</span> captured moments
+                    </p>
+                    <button type="button" class="btn btn--primary" data-gallery="memories" data-gallery-index="0">
+                        <i class="fas fa-images"></i>&nbsp; View All Memories
+                    </button>
+                </div>
+
+                <div class="memories__grid" id="memories-grid"></div>
+            </div>
+        </section>
+
         <section id="webdev" class="webdev section">
             <div class="container">
                 <h2 class="section__title">Web Development</h2>
@@ -327,13 +372,21 @@
                             <li><strong>Christmas Coffee &amp; Dessert</strong> — multi-page site with menu, login, and shopping cart</li>
                             <li><strong>Login Page UI</strong> — glassmorphism design with Boxicons and Google Fonts</li>
                         </ul>
-                        <a href="https://github.com/lyn514/mona" target="_blank" class="btn btn--primary btn--sm">
-                            <i class="fab fa-github"></i>&nbsp; View on GitHub
-                        </a>
+                        <div class="webdev__actions">
+                            <a href="https://github.com/lyn514/Coffee-Shop-Website" target="_blank" rel="noopener" class="btn btn--primary btn--sm">
+                                <i class="fab fa-github"></i>&nbsp; View on GitHub
+                            </a>
+                            <a href="https://lyn514.github.io/Coffee-Shop-Website/" target="_blank" rel="noopener" class="btn btn--secondary btn--sm">
+                                <i class="fas fa-arrow-up-right-from-square"></i>&nbsp; Visit Live Site
+                            </a>
+                        </div>
                     </div>
-                    <div class="webdev__preview">
-                        <img src="https://placehold.co/300x400/d4c9b4/3a3530?text=Web+Projects+Preview" alt="Web Projects Preview">
-                    </div>
+                    <button type="button" class="webdev__preview webdev__preview--button"
+                        data-gallery="coffee" data-gallery-index="0"
+                        aria-label="View Christmas Coffee and Dessert screenshots">
+                        <img src="Christmes%20Coffee%20&amp;%20Dessert/Screenshot%20(463).png" alt="Christmas Coffee and Dessert Website Preview">
+                        <span class="project-card__zoom"><i class="fas fa-images"></i> View 10 Screenshots</span>
+                    </button>
                 </div>
             </div>
         </section>
@@ -422,7 +475,6 @@
                     <a href="https://github.com/lyn514" target="_blank" class="footer__link"><i class="fab fa-github"></i> GitHub</a>
                     <a href="mailto:rovelyn_lani@sjp2cd.edu.ph" class="footer__link"><i class="fas fa-envelope"></i> Email</a>
                     <a href="[ADD LATER]" class="footer__link"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                    <a href="[ADD LATER]" class="footer__link"><i class="fas fa-globe"></i> Portfolio</a>
                 </div>
             </div>
             <div class="footer__bottom">
@@ -430,6 +482,32 @@
             </div>
         </div>
     </footer>
+
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Project screenshots" hidden>
+        <div class="lightbox__backdrop" data-lightbox-close></div>
+        <div class="lightbox__dialog">
+            <div class="lightbox__bar">
+                <span class="lightbox__title" id="lightbox-title"></span>
+                <span class="lightbox__counter" id="lightbox-counter"></span>
+                <button type="button" class="lightbox__btn lightbox__btn--close" data-lightbox-close aria-label="Close viewer">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="lightbox__stage">
+                <button type="button" class="lightbox__btn lightbox__btn--prev" id="lightbox-prev" aria-label="Previous screenshot">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <figure class="lightbox__figure">
+                    <img class="lightbox__img" id="lightbox-img" src="" alt="">
+                    <figcaption class="lightbox__caption" id="lightbox-caption"></figcaption>
+                </figure>
+                <button type="button" class="lightbox__btn lightbox__btn--next" id="lightbox-next" aria-label="Next screenshot">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            <div class="lightbox__thumbs" id="lightbox-thumbs"></div>
+        </div>
+    </div>
 
     <script src="js/script.js"></script>
 </body>
